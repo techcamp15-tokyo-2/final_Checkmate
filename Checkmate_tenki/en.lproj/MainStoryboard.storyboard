@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E3067" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="mVV-Z0-6Yw">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Checkmate tenki View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="checkmate_tenkiViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RcC-qc-MPn">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="idou:" destination="2" eventType="touchUpInside" id="10b-KQ-VHQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RcC-qc-MPn" firstAttribute="top" secondItem="3" secondAttribute="top" constant="252" id="KSh-JG-LLX"/>
+                            <constraint firstItem="RcC-qc-MPn" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="LCe-JZ-cpd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="9dl-bt-kde"/>
+                    <connections>
+                        <segue destination="CYS-JR-6eq" kind="push" identifier="idou" id="7ZQ-KC-k19"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="653" y="33"/>
+        </scene>
+        <!--Area01 checkmate tenki View Controller - 地域選択-->
+        <scene sceneID="5Oh-Mn-aY0">
+            <objects>
+                <viewController title="地域選択" id="CYS-JR-6eq" customClass="area01_checkmate_tenkiViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SLj-C2-EOu">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="k5E-Z7-9NG">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" id="wd5-zt-yRQ">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="k5E-Z7-9NG" firstAttribute="bottom" secondItem="SLj-C2-EOu" secondAttribute="bottom" type="default" id="9Bk-Dt-hER"/>
+                            <constraint firstItem="k5E-Z7-9NG" firstAttribute="top" secondItem="SLj-C2-EOu" secondAttribute="top" type="default" id="InT-Yc-Qee"/>
+                            <constraint firstItem="k5E-Z7-9NG" firstAttribute="trailing" secondItem="SLj-C2-EOu" secondAttribute="trailing" type="default" id="SW9-ll-qIx"/>
+                            <constraint firstItem="k5E-Z7-9NG" firstAttribute="leading" secondItem="SLj-C2-EOu" secondAttribute="leading" type="default" id="ToY-kd-TYl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="k5E-Z7-9NG" id="MOa-fd-iix"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kwK-Fv-wgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050" y="33"/>
+        </scene>
+        <!--Area02 checkmate tenki View Controller-->
+        <scene sceneID="KvP-kF-lqc">
+            <objects>
+                <viewController storyboardIdentifier="area02_checkmate_tenkiViewController" id="lZS-cK-SoS" customClass="area02_checkmate_tenkiViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sSW-xy-nsi">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vZy-Qy-1tb">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell2" id="9cd-AR-S8s">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vZy-Qy-1tb" firstAttribute="leading" secondItem="sSW-xy-nsi" secondAttribute="leading" type="default" id="I1E-iY-UlO"/>
+                            <constraint firstItem="vZy-Qy-1tb" firstAttribute="bottom" secondItem="sSW-xy-nsi" secondAttribute="bottom" type="default" id="I3d-UV-BQY"/>
+                            <constraint firstItem="vZy-Qy-1tb" firstAttribute="top" secondItem="sSW-xy-nsi" secondAttribute="top" type="default" id="J6r-ue-nWS"/>
+                            <constraint firstItem="vZy-Qy-1tb" firstAttribute="trailing" secondItem="sSW-xy-nsi" secondAttribute="trailing" type="default" id="z39-1e-0Pf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView2" destination="vZy-Qy-1tb" id="ocQ-AS-qZn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgT-hF-rZs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446" y="33"/>
+        </scene>
+        <!--Area03 checkmate tenki View Controller-->
+        <scene sceneID="kth-bw-DPm">
+            <objects>
+                <viewController storyboardIdentifier="area03_checkmate_tenkiViewController" id="9JC-1H-oad" customClass="area03_checkmate_tenkiViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OUl-wN-br5">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4Cj-b7-QcD">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell3" id="z64-XT-ksu">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Cj-b7-QcD" firstAttribute="bottom" secondItem="OUl-wN-br5" secondAttribute="bottom" type="default" id="AV2-PL-Imm"/>
+                            <constraint firstItem="4Cj-b7-QcD" firstAttribute="trailing" secondItem="OUl-wN-br5" secondAttribute="trailing" type="default" id="POJ-Dp-voG"/>
+                            <constraint firstItem="4Cj-b7-QcD" firstAttribute="leading" secondItem="OUl-wN-br5" secondAttribute="leading" type="default" id="V62-ez-grM"/>
+                            <constraint firstItem="4Cj-b7-QcD" firstAttribute="top" secondItem="OUl-wN-br5" secondAttribute="top" type="default" id="wd3-5d-6Mr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView3" destination="4Cj-b7-QcD" id="MiS-m0-m8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gi2-xr-km0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1849" y="33"/>
+        </scene>
+        <!--Area04 checkmate tenki View Controller-->
+        <scene sceneID="dip-hN-a94">
+            <objects>
+                <viewController storyboardIdentifier="area04_checkmate_tenkiViewController" id="NcW-hU-kSg" customClass="area04_checkmate_tenkiViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JXB-13-AN2">
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="max" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZ4-PL-FcH">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="mini" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RJ-VM-rFt">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="天気" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qo8-gs-Hu0">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="最高気温" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16A-oJ-XU7">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="最低気温" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vfW-D5-Gqg">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="服装" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Lt-a5-FLa">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="アドバイス" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05y-ae-CQA">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Lt-a5-FLa" firstAttribute="leading" secondItem="qo8-gs-Hu0" secondAttribute="leading" type="default" id="1Oa-vd-PXW"/>
+                            <constraint firstItem="16A-oJ-XU7" firstAttribute="top" secondItem="JXB-13-AN2" secondAttribute="top" constant="112" id="3LO-3h-PXu"/>
+                            <constraint firstItem="5RJ-VM-rFt" firstAttribute="baseline" secondItem="vfW-D5-Gqg" secondAttribute="baseline" type="default" id="7pM-pz-Se8"/>
+                            <constraint firstItem="05y-ae-CQA" firstAttribute="centerX" secondItem="2Lt-a5-FLa" secondAttribute="centerX" type="default" id="GKi-Su-1oO"/>
+                            <constraint firstItem="vZ4-PL-FcH" firstAttribute="baseline" secondItem="16A-oJ-XU7" secondAttribute="baseline" type="default" id="Nvn-zl-tvt"/>
+                            <constraint firstItem="vfW-D5-Gqg" firstAttribute="top" secondItem="JXB-13-AN2" secondAttribute="top" constant="173" id="RQa-H3-c63"/>
+                            <constraint firstAttribute="bottom" secondItem="05y-ae-CQA" secondAttribute="bottom" constant="120" id="RqE-aK-GIv"/>
+                            <constraint firstItem="2Lt-a5-FLa" firstAttribute="centerX" secondItem="JXB-13-AN2" secondAttribute="centerX" type="default" id="S0Y-I3-Vd4"/>
+                            <constraint firstItem="qo8-gs-Hu0" firstAttribute="top" secondItem="JXB-13-AN2" secondAttribute="top" constant="50" id="TPn-ls-Q5g"/>
+                            <constraint firstAttribute="trailing" secondItem="vZ4-PL-FcH" secondAttribute="trailing" constant="101" id="Zsf-Fe-NC1"/>
+                            <constraint firstItem="16A-oJ-XU7" firstAttribute="leading" secondItem="JXB-13-AN2" secondAttribute="leading" constant="92" id="g0x-gN-Mxl"/>
+                            <constraint firstItem="5RJ-VM-rFt" firstAttribute="leading" secondItem="vZ4-PL-FcH" secondAttribute="leading" type="default" id="qwL-Vl-OrI"/>
+                            <constraint firstItem="2Lt-a5-FLa" firstAttribute="top" secondItem="JXB-13-AN2" secondAttribute="top" constant="238" id="rkX-RK-ejk"/>
+                            <constraint firstItem="vfW-D5-Gqg" firstAttribute="leading" secondItem="16A-oJ-XU7" secondAttribute="leading" type="default" id="yDp-MC-HyL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Advice" destination="05y-ae-CQA" id="uHv-iM-lhG"/>
+                        <outlet property="fukusou" destination="2Lt-a5-FLa" id="DXy-cF-n5F"/>
+                        <outlet property="max" destination="vZ4-PL-FcH" id="Uqp-hA-1t9"/>
+                        <outlet property="mini" destination="5RJ-VM-rFt" id="ye3-ST-yd0"/>
+                        <outlet property="tenki" destination="qo8-gs-Hu0" id="hbH-91-FHe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yHP-D3-dGS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2228" y="33"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ip4-ae-llL">
+            <objects>
+                <navigationController id="mVV-Z0-6Yw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cnt-XB-LfA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="JWK-c1-xJ0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GaP-3T-8JQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="237" y="33"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="area01_checkmate_tenkiViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/area01_checkmate_tenkiViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="area02_checkmate_tenkiViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/area02_checkmate_tenkiViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView2" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="area03_checkmate_tenkiViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/area03_checkmate_tenkiViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="tableView3" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="area04_checkmate_tenkiViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/area04_checkmate_tenkiViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="Advice" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="fukusou" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="max" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="mini" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="tenki" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="checkmate_tenkiViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/checkmate_tenkiViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="idou:"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
