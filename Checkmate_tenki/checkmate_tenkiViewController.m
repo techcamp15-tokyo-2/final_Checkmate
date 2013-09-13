@@ -8,6 +8,7 @@
 
 #import "checkmate_tenkiViewController.h"
 #import "area01_checkmate_tenkiViewController.h"
+#import "GPS_checkmate_tenkiViewController.h"
 
 @interface checkmate_tenkiViewController ()
 
@@ -19,6 +20,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Title02.png"]];
+    [self.view addSubview:backgroundImage];
+    [self.view sendSubviewToBack:backgroundImage];
+
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -28,6 +34,11 @@
 }
 
 - (IBAction)idou:(id)sender {
-       [self performSegueWithIdentifier:@"idou" sender:self];
+    [self performSegueWithIdentifier:@"idou" sender:self];
 }
+
+- (IBAction)GPS:(id)sender {
+    [self performSegueWithIdentifier:@"idouGPS" sender:self];
+}
+
 @end

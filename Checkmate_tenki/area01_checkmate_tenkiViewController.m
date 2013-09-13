@@ -8,6 +8,9 @@
 
 #import "area01_checkmate_tenkiViewController.h"
 #import "area02_checkmate_tenkiViewController.h"
+#import "area04_checkmate_tenkiViewController.h"
+#import "GPS_checkmate_tenkiViewController.h"
+#import "Set_ViewController.h"
 
 @interface area01_checkmate_tenkiViewController ()
 
@@ -30,6 +33,17 @@
 	// Do any additional setup after loading the view.
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    
+    UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"japan_800.gif"] ];
+    backgroundImage.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+    [self.view insertSubview:backgroundImage belowSubview:_tableView];
+    
+    self.tableView.backgroundColor = [UIColor clearColor];
+    self.tableView.backgroundView = nil;
+
+    
+     [self setBarButtonItems1];
 }
 
 - (void)didReceiveMemoryWarning
@@ -143,6 +157,28 @@
         
     }
      */
+}
+
+
+- (void) setBarButtonItems1
+{
+    UIBarButtonItem *barButtonItem1 = [[UIBarButtonItem alloc] initWithTitle:@"個人設定" style:UIBarButtonItemStyleBordered target:self action:@selector(buttonEvent1:)];
+    //initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+    //target:self action:@selector(buttonEvent1:)];
+    
+    // animated:YESでItemを設定する
+    [self.navigationController.toolbar setItems:[NSArray arrayWithObjects:barButtonItem1, nil] animated:YES];    // (1)
+    self.navigationItem.rightBarButtonItem = barButtonItem1;
+}
+
+
+
+- (void) buttonEvent1:(id)sender
+{
+    
+    Set_ViewController *svc = [self.storyboard instantiateViewControllerWithIdentifier:@"Set_ViewController"];
+    [self.navigationController pushViewController:svc animated:YES];
+    
 }
 
 

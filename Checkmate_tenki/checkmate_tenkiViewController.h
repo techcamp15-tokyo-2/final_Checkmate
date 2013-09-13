@@ -10,5 +10,6 @@
 
 @interface checkmate_tenkiViewController : UIViewController
 - (IBAction)idou:(id)sender;
+- (IBAction)GPS:(id)sender;
 
 @end

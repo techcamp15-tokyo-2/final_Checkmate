@@ -8,6 +8,8 @@
 
 #import "area02_checkmate_tenkiViewController.h"
 #import "area03_checkmate_tenkiViewController.h"
+#import "area04_checkmate_tenkiViewController.h"
+#import "Set_ViewController.h"
 
 @interface area02_checkmate_tenkiViewController ()
 
@@ -32,6 +34,7 @@
     self.tableView2.delegate = self;
     self.tableView2.dataSource = self;
     self.title = msgValue2;
+    [self setBarButtonItems1];
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,6 +75,17 @@
     //IB上のCellのidentifireと一致させること！
     UITableViewCell *cell;
     if([msgValue2 hasPrefix:@"北海道"]){
+        
+        UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"b_90_hokkaido_800p.gif"] ];
+        
+        backgroundImage.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+        [self.view insertSubview:backgroundImage belowSubview:_tableView2];
+        
+        
+        self.tableView2.backgroundColor = [UIColor clearColor];
+        self.tableView2.backgroundView = nil;
+        
+        
         cell = [tableView dequeueReusableCellWithIdentifier:@"Cell2" forIndexPath:indexPath];
         
         NSArray *array = [NSArray arrayWithObjects:
@@ -79,6 +93,17 @@
         //標準のセル（UITableViewCell)のテキストラベルに文字を指定
         cell.textLabel.text = array[indexPath.row];
     }else if ([msgValue2 hasPrefix:@"東北"]){
+        
+        
+        UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"b_91_tohoku_800p.gif"] ];
+        
+        backgroundImage.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+        [self.view insertSubview:backgroundImage belowSubview:_tableView2];
+        
+        
+        self.tableView2.backgroundColor = [UIColor clearColor];
+        self.tableView2.backgroundView = nil;
+        
         cell = [tableView dequeueReusableCellWithIdentifier:@"Cell2" forIndexPath:indexPath];
         
         NSArray *array = [NSArray arrayWithObjects:
@@ -86,6 +111,18 @@
         //標準のセル（UITableViewCell)のテキストラベルに文字を指定
         cell.textLabel.text = array[indexPath.row];
     }else if ([msgValue2 hasPrefix:@"関東"]){
+        
+        
+        
+        UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"b_92_kanto_800p.gif"] ];
+        
+        backgroundImage.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+        [self.view insertSubview:backgroundImage belowSubview:_tableView2];
+        
+        
+        self.tableView2.backgroundColor = [UIColor clearColor];
+        self.tableView2.backgroundView = nil;
+        
         cell = [tableView dequeueReusableCellWithIdentifier:@"Cell2" forIndexPath:indexPath];
         
         NSArray *array = [NSArray arrayWithObjects:
@@ -93,6 +130,19 @@
         //標準のセル（UITableViewCell)のテキストラベルに文字を指定
         cell.textLabel.text = array[indexPath.row];
     }else if ([msgValue2 hasPrefix:@"中部"]){
+        
+        
+        UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"b_93_hokuriku_800p.gif"] ];
+        
+        backgroundImage.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+        [self.view insertSubview:backgroundImage belowSubview:_tableView2];
+        
+        
+        self.tableView2.backgroundColor = [UIColor clearColor];
+        self.tableView2.backgroundView = nil;
+        
+        
+        
         cell = [tableView dequeueReusableCellWithIdentifier:@"Cell2" forIndexPath:indexPath];
         
         NSArray *array = [NSArray arrayWithObjects:
@@ -100,6 +150,18 @@
         //標準のセル（UITableViewCell)のテキストラベルに文字を指定
         cell.textLabel.text = array[indexPath.row];
     }else if ([msgValue2 hasPrefix:@"近畿"]){
+        
+        
+        UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"b_95_kinki_800p.gif"] ];
+        
+        backgroundImage.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+        [self.view insertSubview:backgroundImage belowSubview:_tableView2];
+        
+        
+        self.tableView2.backgroundColor = [UIColor clearColor];
+        self.tableView2.backgroundView = nil;
+        
+        
         cell = [tableView dequeueReusableCellWithIdentifier:@"Cell2" forIndexPath:indexPath];
         
         NSArray *array = [NSArray arrayWithObjects:
@@ -107,6 +169,17 @@
         //標準のセル（UITableViewCell)のテキストラベルに文字を指定
         cell.textLabel.text = array[indexPath.row];
     }else if([msgValue2 hasPrefix:@"中国"]){
+        
+        UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"b_96_chugoku_500p.gif"] ];
+        
+        backgroundImage.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+        [self.view insertSubview:backgroundImage belowSubview:_tableView2];
+        
+        
+        self.tableView2.backgroundColor = [UIColor clearColor];
+        self.tableView2.backgroundView = nil;
+        
+        
         cell = [tableView dequeueReusableCellWithIdentifier:@"Cell2" forIndexPath:indexPath];
         
         NSArray *array = [NSArray arrayWithObjects:
@@ -114,6 +187,17 @@
         //標準のセル（UITableViewCell)のテキストラベルに文字を指定
         cell.textLabel.text = array[indexPath.row];
     }else if ([msgValue2 hasPrefix:@"四国"]){
+        
+        UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"b_96_chugoku_500p.gif"] ];
+        
+        backgroundImage.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+        [self.view insertSubview:backgroundImage belowSubview:_tableView2];
+        
+        
+        self.tableView2.backgroundColor = [UIColor clearColor];
+        self.tableView2.backgroundView = nil;
+        
+        
         cell = [tableView dequeueReusableCellWithIdentifier:@"Cell2" forIndexPath:indexPath];
         
         NSArray *array = [NSArray arrayWithObjects:
@@ -121,13 +205,26 @@
         //標準のセル（UITableViewCell)のテキストラベルに文字を指定
         cell.textLabel.text = array[indexPath.row];
     }else if ([msgValue2 hasPrefix:@"九州"]){
+        
+        
+        UIImageView *backgroundImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"b_97_kyushu_500p.gif"] ];
+        
+        backgroundImage.center = CGPointMake(self.view.frame.size.width/2, self.view.frame.size.height/2);
+        [self.view insertSubview:backgroundImage belowSubview:_tableView2];
+        
+        
+        self.tableView2.backgroundColor = [UIColor clearColor];
+        self.tableView2.backgroundView = nil;
+        
+        
+        
         cell = [tableView dequeueReusableCellWithIdentifier:@"Cell2" forIndexPath:indexPath];
         
         NSArray *array = [NSArray arrayWithObjects:
                           @"福岡県",@"佐賀県",@"長崎県",@"熊本県",@"大分県",@"宮崎県",@"鹿児島県",@"沖縄県",nil];
         //標準のセル（UITableViewCell)のテキストラベルに文字を指定
         cell.textLabel.text = array[indexPath.row];
-
+        
     }
     return cell;
         
@@ -170,68 +267,350 @@
             area03_checkmate_tenkiViewController.msgValue3 = @"道南";
             [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
         }
-
+    }else if([msgValue2 hasPrefix:@"東北"])
+        {
+            if(indexPath.row == 0)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"青森県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 1)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"岩手県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 2)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"宮城県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 3)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"秋田県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 4)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"山形県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 5)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"福島県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }
+        }else if([msgValue2 hasPrefix:@"関東"])
+        {
+            if(indexPath.row == 0)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"茨城県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 1)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"栃木県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 2)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"群馬県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 3)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"埼玉県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 4)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"千葉県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 5)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"東京都";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 6)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"神奈川県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }
+        }else if ([msgValue2 hasPrefix:@"中部"]){
+            if(indexPath.row == 0)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"新潟県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 1)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"富山県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 2)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"石川県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 3)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"福井県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 4)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"山梨県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 5)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"長野県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 6)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"岐阜県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 7)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"静岡県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 8)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"愛知県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }
+        }else if ([msgValue2 hasPrefix:@"近畿"]){
+            if(indexPath.row == 0)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"三重県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 1)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"滋賀県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 2)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"京都府";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 3)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"大阪府";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 4)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"兵庫県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 5)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"奈良県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 6)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"和歌山県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }
+            
+        }else if([msgValue2 hasPrefix:@"中国"]){
+            if(indexPath.row == 0)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"鳥取県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 1)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"島根県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 2)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"岡山県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 3)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"広島県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 4)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"山口県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }
+        }else if ([msgValue2 hasPrefix:@"四国"]){
+            if(indexPath.row == 0)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"徳島県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 1)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"香川県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 2)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"愛媛県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 3)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 =  @"高知県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }
+            
+        }else if ([msgValue2 hasPrefix:@"九州"]){
+            if(indexPath.row == 0)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"福岡県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 1)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"佐賀県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 2)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"長崎県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 3)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"熊本県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 4)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"大分県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }else if (indexPath.row == 5)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"宮崎県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 6)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"鹿児島県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+            }else if (indexPath.row == 7)
+            {
+                area03_checkmate_tenkiViewController *area03_checkmate_tenkiViewController = [self.storyboard   instantiateViewControllerWithIdentifier:transitionArray[0]];
+                
+                area03_checkmate_tenkiViewController.msgValue3 = @"沖縄県";
+                [self.navigationController pushViewController:area03_checkmate_tenkiViewController animated:YES];
+                
+            }
+        
     }
-    /*
-      else if(indexPath.row == 1)
-    {
-        area02_checkmate_tenkiViewController *area02_checkmate_tenkiViewController = [self.storyboard instantiateViewControllerWithIdentifier:transitionArray[indexPath.row]];
-        
-        area02_checkmate_tenkiViewController.msgValue2 = @"東北地方";
-        [self.navigationController pushViewController:area02_checkmate_tenkiViewController animated:YES];
-        
-    }else if(indexPath.row == 2)
-    {
-        area02_checkmate_tenkiViewController *area02_checkmate_tenkiViewController = [self.storyboard instantiateViewControllerWithIdentifier:transitionArray[indexPath.row]];
-        
-        area02_checkmate_tenkiViewController.msgValue2 = @"関東地方";
-        [self.navigationController pushViewController:area02_checkmate_tenkiViewController animated:YES];
-        
-    }else if(indexPath.row == 3)
-    {
-        area02_checkmate_tenkiViewController *area02_checkmate_tenkiViewController = [self.storyboard instantiateViewControllerWithIdentifier:transitionArray[indexPath.row]];
-        
-        area02_checkmate_tenkiViewController.msgValue2 = @"中部地方";
-        [self.navigationController pushViewController:area02_checkmate_tenkiViewController animated:YES];
-        
-    }else if(indexPath.row == 4)
-    {
-        area02_checkmate_tenkiViewController *area02_checkmate_tenkiViewController = [self.storyboard instantiateViewControllerWithIdentifier:transitionArray[indexPath.row]];
-        
-        area02_checkmate_tenkiViewController.msgValue2 = @"近畿地方";
-        [self.navigationController pushViewController:area02_checkmate_tenkiViewController animated:YES];
-        
-    }else if(indexPath.row == 5)
-    {
-        area02_checkmate_tenkiViewController *area02_checkmate_tenkiViewController = [self.storyboard instantiateViewControllerWithIdentifier:transitionArray[indexPath.row]];
-        
-        area02_checkmate_tenkiViewController.msgValue2 = @"中部地方";
-        [self.navigationController pushViewController:area02_checkmate_tenkiViewController animated:YES];
-        
-    }else if(indexPath.row == 6)
-    {
-        area02_checkmate_tenkiViewController *area02_checkmate_tenkiViewController = [self.storyboard instantiateViewControllerWithIdentifier:transitionArray[indexPath.row]];
-        
-        area02_checkmate_tenkiViewController.msgValue2 = @"四国地方";
-        [self.navigationController pushViewController:area02_checkmate_tenkiViewController animated:YES];
-        
-    }else if(indexPath.row == 7)
-    {
-        area02_checkmate_tenkiViewController *area02_checkmate_tenkiViewController = [self.storyboard instantiateViewControllerWithIdentifier:transitionArray[indexPath.row]];
-        
-        area02_checkmate_tenkiViewController.msgValue2 = @"九州地方";
-        [self.navigationController pushViewController:area02_checkmate_tenkiViewController animated:YES];
-        
-    }else if(indexPath.row == 8)
-    {
-        area02_checkmate_tenkiViewController *area02_checkmate_tenkiViewController = [self.storyboard instantiateViewControllerWithIdentifier:transitionArray[indexPath.row]];
-        
-        area02_checkmate_tenkiViewController.msgValue2 = @"沖縄地方";
-        [self.navigationController pushViewController:area02_checkmate_tenkiViewController animated:YES];
-        
-    }
-     */
 }
+
+
+
+- (void) setBarButtonItems1
+{
+    UIBarButtonItem *barButtonItem1 = [[UIBarButtonItem alloc] initWithTitle:@"個人設定" style:UIBarButtonItemStyleBordered target:self action:@selector(buttonEvent1:)];
+    //initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+    //target:self action:@selector(buttonEvent1:)];
+    
+    // animated:YESでItemを設定する
+    [self.navigationController.toolbar setItems:[NSArray arrayWithObjects:barButtonItem1, nil] animated:YES];    // (1)
+    self.navigationItem.rightBarButtonItem = barButtonItem1;
+}
+
+
+
+- (void) buttonEvent1:(id)sender
+{
+    
+    Set_ViewController *svc = [self.storyboard instantiateViewControllerWithIdentifier:@"Set_ViewController"];
+    [self.navigationController pushViewController:svc animated:YES];
+    
+}
+
 
 
 @end
