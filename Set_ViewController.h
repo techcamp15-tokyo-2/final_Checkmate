@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Set_ViewController : UIViewController
+@protocol Set_ViewController_Delegate;
+@interface Set_ViewController : UIViewController<UIPickerViewDelegate>
 
+
+@property (weak, nonatomic) IBOutlet UIPickerView *Hot;
+@property (copy, nonatomic) NSString *msgValue5;
+@property (strong, nonatomic) id<Set_ViewController_Delegate> delagete;
+
+- (IBAction)buttonPush:(id)sender;
+- (IBAction)SET:(id)sender;
+
+@end
+
+@protocol Set_ViewController_Delegate
+- (void)backFromSet_ViewController:(NSArray *)array;
 @end

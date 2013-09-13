@@ -7,24 +7,144 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		436CC53017D9B80A0083784C /* readme.html in Resources */ = {isa = PBXBuildFile; fileRef = 436CC52E17D9B80A0083784C /* readme.html */; };
+		436CC53117D9B80A0083784C /* umbrella2.ai in Resources */ = {isa = PBXBuildFile; fileRef = 436CC52F17D9B80A0083784C /* umbrella2.ai */; };
+		436CC54917DD94860083784C /* test1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 436CC54817DD94860083784C /* test1.wav */; };
+		436CC54B17DD95090083784C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 436CC54A17DD95090083784C /* AVFoundation.framework */; };
+		436CC58917E019110083784C /* Set_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 436CC58817E019110083784C /* Set_ViewController.m */; };
 		BE63A2CD17D8D75C0072F4E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE63A2CC17D8D75C0072F4E1 /* UIKit.framework */; };
 		BE63A2CF17D8D75C0072F4E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE63A2CE17D8D75C0072F4E1 /* Foundation.framework */; };
 		BE63A2D117D8D75C0072F4E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE63A2D017D8D75C0072F4E1 /* CoreGraphics.framework */; };
 		BE63A2D717D8D75C0072F4E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BE63A2D517D8D75C0072F4E1 /* InfoPlist.strings */; };
 		BE63A2D917D8D75C0072F4E1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE63A2D817D8D75C0072F4E1 /* main.m */; };
 		BE63A2DD17D8D75C0072F4E1 /* checkmate_tenkiAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE63A2DC17D8D75C0072F4E1 /* checkmate_tenkiAppDelegate.m */; };
-		BE63A2DF17D8D75C0072F4E1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BE63A2DE17D8D75C0072F4E1 /* Default.png */; };
-		BE63A2E117D8D75C0072F4E1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE63A2E017D8D75C0072F4E1 /* Default@2x.png */; };
-		BE63A2E317D8D75C0072F4E1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE63A2E217D8D75C0072F4E1 /* Default-568h@2x.png */; };
 		BE63A2E617D8D75C0072F4E1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE63A2E417D8D75C0072F4E1 /* MainStoryboard.storyboard */; };
 		BE63A2E917D8D75C0072F4E1 /* checkmate_tenkiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE63A2E817D8D75C0072F4E1 /* checkmate_tenkiViewController.m */; };
 		BE63A2F117D8D8110072F4E1 /* area01_checkmate_tenkiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE63A2F017D8D8110072F4E1 /* area01_checkmate_tenkiViewController.m */; };
 		BE63A2F417D8DAEC0072F4E1 /* area02_checkmate_tenkiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE63A2F317D8DAEC0072F4E1 /* area02_checkmate_tenkiViewController.m */; };
 		BE63A2F717D95F640072F4E1 /* area03_checkmate_tenkiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE63A2F617D95F640072F4E1 /* area03_checkmate_tenkiViewController.m */; };
 		BE63A2FA17D975560072F4E1 /* area04_checkmate_tenkiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE63A2F917D975560072F4E1 /* area04_checkmate_tenkiViewController.m */; };
+		BE9434C017E1A5BF00D4BFD4 /* GPS_checkmate_tenkiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9434BF17E1A5BF00D4BFD4 /* GPS_checkmate_tenkiViewController.m */; };
+		BE9434C217E1A6A400D4BFD4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE9434C117E1A6A400D4BFD4 /* CoreLocation.framework */; };
+		BE94359917E1BF1400D4BFD4 /* myIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94359817E1BF1400D4BFD4 /* myIcon@2x.png */; };
+		BE94359B17E1BF9600D4BFD4 /* myIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94359A17E1BF9600D4BFD4 /* myIcon.png */; };
+		BE9435AF17E1CBD100D4BFD4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435AE17E1CBD100D4BFD4 /* Default-568h@2x.png */; };
+		BE9435B117E1CBD700D4BFD4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435B017E1CBD700D4BFD4 /* Default@2x.png */; };
+		BE9435B317E1CBDE00D4BFD4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435B217E1CBDE00D4BFD4 /* Default.png */; };
+		BE94362617E296D700D4BFD4 /* GPS-pic.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435BE17E296D600D4BFD4 /* GPS-pic.png */; };
+		BE94362717E296D700D4BFD4 /* Cap.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435C017E296D700D4BFD4 /* Cap.png */; };
+		BE94362817E296D700D4BFD4 /* Car-B.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435C117E296D700D4BFD4 /* Car-B.png */; };
+		BE94362917E296D700D4BFD4 /* Car-G.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435C217E296D700D4BFD4 /* Car-G.png */; };
+		BE94362A17E296D700D4BFD4 /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435C317E296D700D4BFD4 /* globe.png */; };
+		BE94362B17E296D700D4BFD4 /* kasa.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435C417E296D700D4BFD4 /* kasa.png */; };
+		BE94362C17E296D700D4BFD4 /* Long-K.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435C517E296D700D4BFD4 /* Long-K.png */; };
+		BE94362D17E296D700D4BFD4 /* Out-Gsoft.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435C617E296D700D4BFD4 /* Out-Gsoft.png */; };
+		BE94362E17E296D700D4BFD4 /* Out-P.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435C717E296D700D4BFD4 /* Out-P.png */; };
+		BE94362F17E296D700D4BFD4 /* Sh-B.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435C817E296D700D4BFD4 /* Sh-B.png */; };
+		BE94363017E296D700D4BFD4 /* Sh-O.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435C917E296D700D4BFD4 /* Sh-O.png */; };
+		BE94363117E296D700D4BFD4 /* Short-B.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435CA17E296D700D4BFD4 /* Short-B.png */; };
+		BE94363217E296D700D4BFD4 /* T-Pu.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435CB17E296D700D4BFD4 /* T-Pu.png */; };
+		BE94363317E296D700D4BFD4 /* T-Y.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435CC17E296D700D4BFD4 /* T-Y.png */; };
+		BE94363417E296D700D4BFD4 /* T^P-L^K.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435CD17E296D700D4BFD4 /* T^P-L^K.png */; };
+		BE94363517E296D700D4BFD4 /* Tops-P.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435CE17E296D700D4BFD4 /* Tops-P.png */; };
+		BE94363617E296D700D4BFD4 /* nao-chan.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435CF17E296D700D4BFD4 /* nao-chan.png */; };
+		BE94363717E296D700D4BFD4 /* cloud01.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BE9435D117E296D700D4BFD4 /* cloud01.m4a */; };
+		BE94363817E296D700D4BFD4 /* cloud02.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BE9435D217E296D700D4BFD4 /* cloud02.m4a */; };
+		BE94363917E296D700D4BFD4 /* omake01.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BE9435D317E296D700D4BFD4 /* omake01.m4a */; };
+		BE94363A17E296D700D4BFD4 /* omake02.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BE9435D417E296D700D4BFD4 /* omake02.m4a */; };
+		BE94363B17E296D700D4BFD4 /* rain01.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BE9435D517E296D700D4BFD4 /* rain01.m4a */; };
+		BE94363C17E296D700D4BFD4 /* rein02.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BE9435D617E296D700D4BFD4 /* rein02.m4a */; };
+		BE94363D17E296D700D4BFD4 /* sun01.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BE9435D717E296D700D4BFD4 /* sun01.m4a */; };
+		BE94363E17E296D700D4BFD4 /* sun02.m4a in Resources */ = {isa = PBXBuildFile; fileRef = BE9435D817E296D700D4BFD4 /* sun02.m4a */; };
+		BE94363F17E296D700D4BFD4 /* sentaku.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435D917E296D700D4BFD4 /* sentaku.png */; };
+		BE94364017E296D700D4BFD4 /* Title02.png in Resources */ = {isa = PBXBuildFile; fileRef = BE9435DA17E296D700D4BFD4 /* Title02.png */; };
+		BE94364117E296D700D4BFD4 /* b_90_hokkaido_800p.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435DC17E296D700D4BFD4 /* b_90_hokkaido_800p.gif */; };
+		BE94364217E296D700D4BFD4 /* b_91_tohoku_800p.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435DD17E296D700D4BFD4 /* b_91_tohoku_800p.gif */; };
+		BE94364317E296D700D4BFD4 /* b_92_kanto_800p.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435DE17E296D700D4BFD4 /* b_92_kanto_800p.gif */; };
+		BE94364417E296D700D4BFD4 /* b_93_hokuriku_800p.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435DF17E296D700D4BFD4 /* b_93_hokuriku_800p.gif */; };
+		BE94364517E296D700D4BFD4 /* b_95_kinki_800p.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435E017E296D700D4BFD4 /* b_95_kinki_800p.gif */; };
+		BE94364617E296D700D4BFD4 /* b_96_chugoku_500p.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435E117E296D700D4BFD4 /* b_96_chugoku_500p.gif */; };
+		BE94364717E296D700D4BFD4 /* b_97_kyushu_500p.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435E217E296D700D4BFD4 /* b_97_kyushu_500p.gif */; };
+		BE94364817E296D700D4BFD4 /* b_98_okinawa_500p.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435E317E296D700D4BFD4 /* b_98_okinawa_500p.gif */; };
+		BE94364917E296D700D4BFD4 /* japan_800.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435E417E296D700D4BFD4 /* japan_800.gif */; };
+		BE94364A17E296D700D4BFD4 /* map_aichi480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435E517E296D700D4BFD4 /* map_aichi480.gif */; };
+		BE94364B17E296D700D4BFD4 /* map_akita480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435E617E296D700D4BFD4 /* map_akita480.gif */; };
+		BE94364C17E296D700D4BFD4 /* map_aomori480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435E717E296D700D4BFD4 /* map_aomori480.gif */; };
+		BE94364D17E296D700D4BFD4 /* map_chiba480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435E817E296D700D4BFD4 /* map_chiba480.gif */; };
+		BE94364E17E296D700D4BFD4 /* map_ehime480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435E917E296D700D4BFD4 /* map_ehime480.gif */; };
+		BE94364F17E296D700D4BFD4 /* map_fukui480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435EA17E296D700D4BFD4 /* map_fukui480.gif */; };
+		BE94365017E296D700D4BFD4 /* map_fukuoka480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435EB17E296D700D4BFD4 /* map_fukuoka480.gif */; };
+		BE94365117E296D700D4BFD4 /* map_fukusima480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435EC17E296D700D4BFD4 /* map_fukusima480.gif */; };
+		BE94365217E296D700D4BFD4 /* map_gifu480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435ED17E296D700D4BFD4 /* map_gifu480.gif */; };
+		BE94365317E296D700D4BFD4 /* map_gunma480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435EE17E296D700D4BFD4 /* map_gunma480.gif */; };
+		BE94365417E296D700D4BFD4 /* map_hirosima480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435EF17E296D700D4BFD4 /* map_hirosima480.gif */; };
+		BE94365517E296D700D4BFD4 /* map_hokaido480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435F017E296D700D4BFD4 /* map_hokaido480.gif */; };
+		BE94365617E296D700D4BFD4 /* map_hyogo480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435F117E296D700D4BFD4 /* map_hyogo480.gif */; };
+		BE94365717E296D700D4BFD4 /* map_ibaragi480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435F217E296D700D4BFD4 /* map_ibaragi480.gif */; };
+		BE94365817E296D700D4BFD4 /* map_isikawa480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435F317E296D700D4BFD4 /* map_isikawa480.gif */; };
+		BE94365917E296D700D4BFD4 /* map_iwate480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435F417E296D700D4BFD4 /* map_iwate480.gif */; };
+		BE94365A17E296D700D4BFD4 /* map_kagawa480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435F517E296D700D4BFD4 /* map_kagawa480.gif */; };
+		BE94365B17E296D700D4BFD4 /* map_kagosima480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435F617E296D700D4BFD4 /* map_kagosima480.gif */; };
+		BE94365C17E296D700D4BFD4 /* map_kanagawa480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435F717E296D700D4BFD4 /* map_kanagawa480.gif */; };
+		BE94365D17E296D700D4BFD4 /* map_kouchi480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435F817E296D700D4BFD4 /* map_kouchi480.gif */; };
+		BE94365E17E296D700D4BFD4 /* map_kumamoto480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435F917E296D700D4BFD4 /* map_kumamoto480.gif */; };
+		BE94365F17E296D700D4BFD4 /* map_kyoto480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435FA17E296D700D4BFD4 /* map_kyoto480.gif */; };
+		BE94366017E296D700D4BFD4 /* map_mie480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435FB17E296D700D4BFD4 /* map_mie480.gif */; };
+		BE94366117E296D700D4BFD4 /* map_miyagi480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435FC17E296D700D4BFD4 /* map_miyagi480.gif */; };
+		BE94366217E296D700D4BFD4 /* map_miyazaki480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435FD17E296D700D4BFD4 /* map_miyazaki480.gif */; };
+		BE94366317E296D700D4BFD4 /* map_nagano480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435FE17E296D700D4BFD4 /* map_nagano480.gif */; };
+		BE94366417E296D700D4BFD4 /* map_nagasaki480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE9435FF17E296D700D4BFD4 /* map_nagasaki480.gif */; };
+		BE94366517E296D700D4BFD4 /* map_nara480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360017E296D700D4BFD4 /* map_nara480.gif */; };
+		BE94366617E296D700D4BFD4 /* map_niigata480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360117E296D700D4BFD4 /* map_niigata480.gif */; };
+		BE94366717E296D700D4BFD4 /* map_okayama480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360217E296D700D4BFD4 /* map_okayama480.gif */; };
+		BE94366817E296D700D4BFD4 /* map_okinawa480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360317E296D700D4BFD4 /* map_okinawa480.gif */; };
+		BE94366917E296D700D4BFD4 /* map_ooita480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360417E296D700D4BFD4 /* map_ooita480.gif */; };
+		BE94366A17E296D700D4BFD4 /* map_osaka480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360517E296D700D4BFD4 /* map_osaka480.gif */; };
+		BE94366B17E296D700D4BFD4 /* map_saga480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360617E296D700D4BFD4 /* map_saga480.gif */; };
+		BE94366C17E296D700D4BFD4 /* map_saitama480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360717E296D700D4BFD4 /* map_saitama480.gif */; };
+		BE94366D17E296D700D4BFD4 /* map_siga480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360817E296D700D4BFD4 /* map_siga480.gif */; };
+		BE94366E17E296D700D4BFD4 /* map_simane480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360917E296D700D4BFD4 /* map_simane480.gif */; };
+		BE94366F17E296D700D4BFD4 /* map_sizuoka480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360A17E296D700D4BFD4 /* map_sizuoka480.gif */; };
+		BE94367017E296D700D4BFD4 /* map_tochigi480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360B17E296D700D4BFD4 /* map_tochigi480.gif */; };
+		BE94367117E296D700D4BFD4 /* map_tokusima480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360C17E296D700D4BFD4 /* map_tokusima480.gif */; };
+		BE94367217E296D700D4BFD4 /* map_tokyo480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360D17E296D700D4BFD4 /* map_tokyo480.gif */; };
+		BE94367317E296D700D4BFD4 /* map_tottori480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360E17E296D700D4BFD4 /* map_tottori480.gif */; };
+		BE94367417E296D700D4BFD4 /* map_toyama480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94360F17E296D700D4BFD4 /* map_toyama480.gif */; };
+		BE94367517E296D700D4BFD4 /* map_wakayama480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94361017E296D700D4BFD4 /* map_wakayama480.gif */; };
+		BE94367617E296D700D4BFD4 /* map_yamagata480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94361117E296D700D4BFD4 /* map_yamagata480.gif */; };
+		BE94367717E296D700D4BFD4 /* map_yamaguchi480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94361217E296D700D4BFD4 /* map_yamaguchi480.gif */; };
+		BE94367817E296D700D4BFD4 /* map_yamanasi480.gif in Resources */ = {isa = PBXBuildFile; fileRef = BE94361317E296D700D4BFD4 /* map_yamanasi480.gif */; };
+		BE94367917E296D700D4BFD4 /* cloud-rain.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94361517E296D700D4BFD4 /* cloud-rain.png */; };
+		BE94367A17E296D700D4BFD4 /* cloud-sun.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94361617E296D700D4BFD4 /* cloud-sun.png */; };
+		BE94367B17E296D700D4BFD4 /* cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94361717E296D700D4BFD4 /* cloud.png */; };
+		BE94367C17E296D700D4BFD4 /* rain-cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94361817E296D700D4BFD4 /* rain-cloud.png */; };
+		BE94367D17E296D700D4BFD4 /* rain-sun.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94361917E296D700D4BFD4 /* rain-sun.png */; };
+		BE94367E17E296D700D4BFD4 /* rain.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94361A17E296D700D4BFD4 /* rain.png */; };
+		BE94367F17E296D700D4BFD4 /* rain^cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94361B17E296D700D4BFD4 /* rain^cloud.png */; };
+		BE94368017E296D700D4BFD4 /* rain^snow.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94361C17E296D700D4BFD4 /* rain^snow.png */; };
+		BE94368117E296D700D4BFD4 /* snow-rain.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94361D17E296D700D4BFD4 /* snow-rain.png */; };
+		BE94368217E296D700D4BFD4 /* snow-sun.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94361E17E296D700D4BFD4 /* snow-sun.png */; };
+		BE94368317E296D700D4BFD4 /* snow.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94361F17E296D700D4BFD4 /* snow.png */; };
+		BE94368417E296D700D4BFD4 /* sun-cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94362017E296D700D4BFD4 /* sun-cloud.png */; };
+		BE94368517E296D700D4BFD4 /* sun-rain.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94362117E296D700D4BFD4 /* sun-rain.png */; };
+		BE94368617E296D700D4BFD4 /* sun.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94362217E296D700D4BFD4 /* sun.png */; };
+		BE94368717E296D700D4BFD4 /* sun^cloud.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94362317E296D700D4BFD4 /* sun^cloud.png */; };
+		BE94368817E296D700D4BFD4 /* sun^rain.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94362417E296D700D4BFD4 /* sun^rain.png */; };
+		BE94368917E296D700D4BFD4 /* sun^snowpng.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94362517E296D700D4BFD4 /* sun^snowpng.png */; };
+		BE94368B17E2999F00D4BFD4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94368A17E2999F00D4BFD4 /* Default@2x.png */; };
+		BE94368F17E299D300D4BFD4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94368C17E299D300D4BFD4 /* Default-568h@2x.png */; };
+		BE94369017E299D300D4BFD4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94368D17E299D300D4BFD4 /* Default.png */; };
+		BE94369117E299D300D4BFD4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94368E17E299D300D4BFD4 /* Default@2x.png */; };
+		BE94369317E299DE00D4BFD4 /* Title02.png in Resources */ = {isa = PBXBuildFile; fileRef = BE94369217E299DE00D4BFD4 /* Title02.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		436CC52E17D9B80A0083784C /* readme.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = readme.html; sourceTree = "<group>"; };
+		436CC52F17D9B80A0083784C /* umbrella2.ai */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = umbrella2.ai; sourceTree = "<group>"; };
+		436CC54817DD94860083784C /* test1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = test1.wav; sourceTree = "<group>"; };
+		436CC54A17DD95090083784C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		436CC58717E019110083784C /* Set_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Set_ViewController.h; path = ../Set_ViewController.h; sourceTree = "<group>"; };
+		436CC58817E019110083784C /* Set_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Set_ViewController.m; path = ../Set_ViewController.m; sourceTree = "<group>"; };
 		BE63A2C917D8D75C0072F4E1 /* Checkmate_tenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Checkmate_tenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE63A2CC17D8D75C0072F4E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BE63A2CE17D8D75C0072F4E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -35,9 +155,6 @@
 		BE63A2DA17D8D75C0072F4E1 /* Checkmate_tenki-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Checkmate_tenki-Prefix.pch"; sourceTree = "<group>"; };
 		BE63A2DB17D8D75C0072F4E1 /* checkmate_tenkiAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = checkmate_tenkiAppDelegate.h; sourceTree = "<group>"; };
 		BE63A2DC17D8D75C0072F4E1 /* checkmate_tenkiAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = checkmate_tenkiAppDelegate.m; sourceTree = "<group>"; };
-		BE63A2DE17D8D75C0072F4E1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		BE63A2E017D8D75C0072F4E1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		BE63A2E217D8D75C0072F4E1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BE63A2E517D8D75C0072F4E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		BE63A2E717D8D75C0072F4E1 /* checkmate_tenkiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = checkmate_tenkiViewController.h; sourceTree = "<group>"; };
 		BE63A2E817D8D75C0072F4E1 /* checkmate_tenkiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = checkmate_tenkiViewController.m; sourceTree = "<group>"; };
@@ -49,6 +166,119 @@
 		BE63A2F617D95F640072F4E1 /* area03_checkmate_tenkiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = area03_checkmate_tenkiViewController.m; sourceTree = "<group>"; };
 		BE63A2F817D975560072F4E1 /* area04_checkmate_tenkiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = area04_checkmate_tenkiViewController.h; sourceTree = "<group>"; };
 		BE63A2F917D975560072F4E1 /* area04_checkmate_tenkiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = area04_checkmate_tenkiViewController.m; sourceTree = "<group>"; };
+		BE9434BE17E1A5BF00D4BFD4 /* GPS_checkmate_tenkiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPS_checkmate_tenkiViewController.h; sourceTree = "<group>"; };
+		BE9434BF17E1A5BF00D4BFD4 /* GPS_checkmate_tenkiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPS_checkmate_tenkiViewController.m; sourceTree = "<group>"; };
+		BE9434C117E1A6A400D4BFD4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BE94359817E1BF1400D4BFD4 /* myIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "myIcon@2x.png"; path = "../myIcon@2x.png"; sourceTree = "<group>"; };
+		BE94359A17E1BF9600D4BFD4 /* myIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = myIcon.png; path = ../myIcon.png; sourceTree = "<group>"; };
+		BE9435AE17E1CBD100D4BFD4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BE9435B017E1CBD700D4BFD4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BE9435B217E1CBDE00D4BFD4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BE9435BE17E296D600D4BFD4 /* GPS-pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "GPS-pic.png"; sourceTree = SOURCE_ROOT; };
+		BE9435C017E296D700D4BFD4 /* Cap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cap.png; sourceTree = "<group>"; };
+		BE9435C117E296D700D4BFD4 /* Car-B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Car-B.png"; sourceTree = "<group>"; };
+		BE9435C217E296D700D4BFD4 /* Car-G.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Car-G.png"; sourceTree = "<group>"; };
+		BE9435C317E296D700D4BFD4 /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
+		BE9435C417E296D700D4BFD4 /* kasa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kasa.png; sourceTree = "<group>"; };
+		BE9435C517E296D700D4BFD4 /* Long-K.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Long-K.png"; sourceTree = "<group>"; };
+		BE9435C617E296D700D4BFD4 /* Out-Gsoft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Out-Gsoft.png"; sourceTree = "<group>"; };
+		BE9435C717E296D700D4BFD4 /* Out-P.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Out-P.png"; sourceTree = "<group>"; };
+		BE9435C817E296D700D4BFD4 /* Sh-B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sh-B.png"; sourceTree = "<group>"; };
+		BE9435C917E296D700D4BFD4 /* Sh-O.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Sh-O.png"; sourceTree = "<group>"; };
+		BE9435CA17E296D700D4BFD4 /* Short-B.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Short-B.png"; sourceTree = "<group>"; };
+		BE9435CB17E296D700D4BFD4 /* T-Pu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "T-Pu.png"; sourceTree = "<group>"; };
+		BE9435CC17E296D700D4BFD4 /* T-Y.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "T-Y.png"; sourceTree = "<group>"; };
+		BE9435CD17E296D700D4BFD4 /* T^P-L^K.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "T^P-L^K.png"; sourceTree = "<group>"; };
+		BE9435CE17E296D700D4BFD4 /* Tops-P.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Tops-P.png"; sourceTree = "<group>"; };
+		BE9435CF17E296D700D4BFD4 /* nao-chan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nao-chan.png"; sourceTree = SOURCE_ROOT; };
+		BE9435D117E296D700D4BFD4 /* cloud01.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloud01.m4a; sourceTree = "<group>"; };
+		BE9435D217E296D700D4BFD4 /* cloud02.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = cloud02.m4a; sourceTree = "<group>"; };
+		BE9435D317E296D700D4BFD4 /* omake01.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = omake01.m4a; sourceTree = "<group>"; };
+		BE9435D417E296D700D4BFD4 /* omake02.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = omake02.m4a; sourceTree = "<group>"; };
+		BE9435D517E296D700D4BFD4 /* rain01.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = rain01.m4a; sourceTree = "<group>"; };
+		BE9435D617E296D700D4BFD4 /* rein02.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = rein02.m4a; sourceTree = "<group>"; };
+		BE9435D717E296D700D4BFD4 /* sun01.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sun01.m4a; sourceTree = "<group>"; };
+		BE9435D817E296D700D4BFD4 /* sun02.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = sun02.m4a; sourceTree = "<group>"; };
+		BE9435D917E296D700D4BFD4 /* sentaku.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sentaku.png; sourceTree = SOURCE_ROOT; };
+		BE9435DA17E296D700D4BFD4 /* Title02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title02.png; sourceTree = SOURCE_ROOT; };
+		BE9435DC17E296D700D4BFD4 /* b_90_hokkaido_800p.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b_90_hokkaido_800p.gif; sourceTree = "<group>"; };
+		BE9435DD17E296D700D4BFD4 /* b_91_tohoku_800p.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b_91_tohoku_800p.gif; sourceTree = "<group>"; };
+		BE9435DE17E296D700D4BFD4 /* b_92_kanto_800p.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b_92_kanto_800p.gif; sourceTree = "<group>"; };
+		BE9435DF17E296D700D4BFD4 /* b_93_hokuriku_800p.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b_93_hokuriku_800p.gif; sourceTree = "<group>"; };
+		BE9435E017E296D700D4BFD4 /* b_95_kinki_800p.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b_95_kinki_800p.gif; sourceTree = "<group>"; };
+		BE9435E117E296D700D4BFD4 /* b_96_chugoku_500p.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b_96_chugoku_500p.gif; sourceTree = "<group>"; };
+		BE9435E217E296D700D4BFD4 /* b_97_kyushu_500p.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b_97_kyushu_500p.gif; sourceTree = "<group>"; };
+		BE9435E317E296D700D4BFD4 /* b_98_okinawa_500p.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = b_98_okinawa_500p.gif; sourceTree = "<group>"; };
+		BE9435E417E296D700D4BFD4 /* japan_800.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = japan_800.gif; sourceTree = "<group>"; };
+		BE9435E517E296D700D4BFD4 /* map_aichi480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_aichi480.gif; sourceTree = "<group>"; };
+		BE9435E617E296D700D4BFD4 /* map_akita480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_akita480.gif; sourceTree = "<group>"; };
+		BE9435E717E296D700D4BFD4 /* map_aomori480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_aomori480.gif; sourceTree = "<group>"; };
+		BE9435E817E296D700D4BFD4 /* map_chiba480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_chiba480.gif; sourceTree = "<group>"; };
+		BE9435E917E296D700D4BFD4 /* map_ehime480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_ehime480.gif; sourceTree = "<group>"; };
+		BE9435EA17E296D700D4BFD4 /* map_fukui480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_fukui480.gif; sourceTree = "<group>"; };
+		BE9435EB17E296D700D4BFD4 /* map_fukuoka480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_fukuoka480.gif; sourceTree = "<group>"; };
+		BE9435EC17E296D700D4BFD4 /* map_fukusima480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_fukusima480.gif; sourceTree = "<group>"; };
+		BE9435ED17E296D700D4BFD4 /* map_gifu480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_gifu480.gif; sourceTree = "<group>"; };
+		BE9435EE17E296D700D4BFD4 /* map_gunma480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_gunma480.gif; sourceTree = "<group>"; };
+		BE9435EF17E296D700D4BFD4 /* map_hirosima480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_hirosima480.gif; sourceTree = "<group>"; };
+		BE9435F017E296D700D4BFD4 /* map_hokaido480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_hokaido480.gif; sourceTree = "<group>"; };
+		BE9435F117E296D700D4BFD4 /* map_hyogo480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_hyogo480.gif; sourceTree = "<group>"; };
+		BE9435F217E296D700D4BFD4 /* map_ibaragi480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_ibaragi480.gif; sourceTree = "<group>"; };
+		BE9435F317E296D700D4BFD4 /* map_isikawa480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_isikawa480.gif; sourceTree = "<group>"; };
+		BE9435F417E296D700D4BFD4 /* map_iwate480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_iwate480.gif; sourceTree = "<group>"; };
+		BE9435F517E296D700D4BFD4 /* map_kagawa480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_kagawa480.gif; sourceTree = "<group>"; };
+		BE9435F617E296D700D4BFD4 /* map_kagosima480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_kagosima480.gif; sourceTree = "<group>"; };
+		BE9435F717E296D700D4BFD4 /* map_kanagawa480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_kanagawa480.gif; sourceTree = "<group>"; };
+		BE9435F817E296D700D4BFD4 /* map_kouchi480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_kouchi480.gif; sourceTree = "<group>"; };
+		BE9435F917E296D700D4BFD4 /* map_kumamoto480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_kumamoto480.gif; sourceTree = "<group>"; };
+		BE9435FA17E296D700D4BFD4 /* map_kyoto480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_kyoto480.gif; sourceTree = "<group>"; };
+		BE9435FB17E296D700D4BFD4 /* map_mie480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_mie480.gif; sourceTree = "<group>"; };
+		BE9435FC17E296D700D4BFD4 /* map_miyagi480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_miyagi480.gif; sourceTree = "<group>"; };
+		BE9435FD17E296D700D4BFD4 /* map_miyazaki480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_miyazaki480.gif; sourceTree = "<group>"; };
+		BE9435FE17E296D700D4BFD4 /* map_nagano480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_nagano480.gif; sourceTree = "<group>"; };
+		BE9435FF17E296D700D4BFD4 /* map_nagasaki480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_nagasaki480.gif; sourceTree = "<group>"; };
+		BE94360017E296D700D4BFD4 /* map_nara480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_nara480.gif; sourceTree = "<group>"; };
+		BE94360117E296D700D4BFD4 /* map_niigata480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_niigata480.gif; sourceTree = "<group>"; };
+		BE94360217E296D700D4BFD4 /* map_okayama480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_okayama480.gif; sourceTree = "<group>"; };
+		BE94360317E296D700D4BFD4 /* map_okinawa480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_okinawa480.gif; sourceTree = "<group>"; };
+		BE94360417E296D700D4BFD4 /* map_ooita480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_ooita480.gif; sourceTree = "<group>"; };
+		BE94360517E296D700D4BFD4 /* map_osaka480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_osaka480.gif; sourceTree = "<group>"; };
+		BE94360617E296D700D4BFD4 /* map_saga480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_saga480.gif; sourceTree = "<group>"; };
+		BE94360717E296D700D4BFD4 /* map_saitama480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_saitama480.gif; sourceTree = "<group>"; };
+		BE94360817E296D700D4BFD4 /* map_siga480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_siga480.gif; sourceTree = "<group>"; };
+		BE94360917E296D700D4BFD4 /* map_simane480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_simane480.gif; sourceTree = "<group>"; };
+		BE94360A17E296D700D4BFD4 /* map_sizuoka480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_sizuoka480.gif; sourceTree = "<group>"; };
+		BE94360B17E296D700D4BFD4 /* map_tochigi480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_tochigi480.gif; sourceTree = "<group>"; };
+		BE94360C17E296D700D4BFD4 /* map_tokusima480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_tokusima480.gif; sourceTree = "<group>"; };
+		BE94360D17E296D700D4BFD4 /* map_tokyo480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_tokyo480.gif; sourceTree = "<group>"; };
+		BE94360E17E296D700D4BFD4 /* map_tottori480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_tottori480.gif; sourceTree = "<group>"; };
+		BE94360F17E296D700D4BFD4 /* map_toyama480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_toyama480.gif; sourceTree = "<group>"; };
+		BE94361017E296D700D4BFD4 /* map_wakayama480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_wakayama480.gif; sourceTree = "<group>"; };
+		BE94361117E296D700D4BFD4 /* map_yamagata480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_yamagata480.gif; sourceTree = "<group>"; };
+		BE94361217E296D700D4BFD4 /* map_yamaguchi480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_yamaguchi480.gif; sourceTree = "<group>"; };
+		BE94361317E296D700D4BFD4 /* map_yamanasi480.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = map_yamanasi480.gif; sourceTree = "<group>"; };
+		BE94361517E296D700D4BFD4 /* cloud-rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud-rain.png"; sourceTree = "<group>"; };
+		BE94361617E296D700D4BFD4 /* cloud-sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cloud-sun.png"; sourceTree = "<group>"; };
+		BE94361717E296D700D4BFD4 /* cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cloud.png; sourceTree = "<group>"; };
+		BE94361817E296D700D4BFD4 /* rain-cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rain-cloud.png"; sourceTree = "<group>"; };
+		BE94361917E296D700D4BFD4 /* rain-sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rain-sun.png"; sourceTree = "<group>"; };
+		BE94361A17E296D700D4BFD4 /* rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rain.png; sourceTree = "<group>"; };
+		BE94361B17E296D700D4BFD4 /* rain^cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rain^cloud.png"; sourceTree = "<group>"; };
+		BE94361C17E296D700D4BFD4 /* rain^snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rain^snow.png"; sourceTree = "<group>"; };
+		BE94361D17E296D700D4BFD4 /* snow-rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snow-rain.png"; sourceTree = "<group>"; };
+		BE94361E17E296D700D4BFD4 /* snow-sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "snow-sun.png"; sourceTree = "<group>"; };
+		BE94361F17E296D700D4BFD4 /* snow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = snow.png; sourceTree = "<group>"; };
+		BE94362017E296D700D4BFD4 /* sun-cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sun-cloud.png"; sourceTree = "<group>"; };
+		BE94362117E296D700D4BFD4 /* sun-rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sun-rain.png"; sourceTree = "<group>"; };
+		BE94362217E296D700D4BFD4 /* sun.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sun.png; sourceTree = "<group>"; };
+		BE94362317E296D700D4BFD4 /* sun^cloud.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sun^cloud.png"; sourceTree = "<group>"; };
+		BE94362417E296D700D4BFD4 /* sun^rain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sun^rain.png"; sourceTree = "<group>"; };
+		BE94362517E296D700D4BFD4 /* sun^snowpng.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sun^snowpng.png"; sourceTree = "<group>"; };
+		BE94368A17E2999F00D4BFD4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		BE94368C17E299D300D4BFD4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		BE94368D17E299D300D4BFD4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = SOURCE_ROOT; };
+		BE94368E17E299D300D4BFD4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		BE94369217E299DE00D4BFD4 /* Title02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Title02.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +286,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9434C217E1A6A400D4BFD4 /* CoreLocation.framework in Frameworks */,
+				436CC54B17DD95090083784C /* AVFoundation.framework in Frameworks */,
 				BE63A2CD17D8D75C0072F4E1 /* UIKit.framework in Frameworks */,
 				BE63A2CF17D8D75C0072F4E1 /* Foundation.framework in Frameworks */,
 				BE63A2D117D8D75C0072F4E1 /* CoreGraphics.framework in Frameworks */,
@@ -65,9 +297,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		436CC52D17D9B8090083784C /* umbrella2 */ = {
+			isa = PBXGroup;
+			children = (
+				436CC52E17D9B80A0083784C /* readme.html */,
+				436CC52F17D9B80A0083784C /* umbrella2.ai */,
+			);
+			path = umbrella2;
+			sourceTree = "<group>";
+		};
+		436CC54717DD94860083784C /* music */ = {
+			isa = PBXGroup;
+			children = (
+				436CC54A17DD95090083784C /* AVFoundation.framework */,
+				436CC54817DD94860083784C /* test1.wav */,
+			);
+			path = music;
+			sourceTree = "<group>";
+		};
 		BE63A2C017D8D75B0072F4E1 = {
 			isa = PBXGroup;
 			children = (
+				BE9435B217E1CBDE00D4BFD4 /* Default.png */,
+				BE9435B017E1CBD700D4BFD4 /* Default@2x.png */,
+				BE9435AE17E1CBD100D4BFD4 /* Default-568h@2x.png */,
 				BE63A2D217D8D75C0072F4E1 /* Checkmate_tenki */,
 				BE63A2CB17D8D75C0072F4E1 /* Frameworks */,
 				BE63A2CA17D8D75C0072F4E1 /* Products */,
@@ -85,6 +338,7 @@
 		BE63A2CB17D8D75C0072F4E1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE9434C117E1A6A400D4BFD4 /* CoreLocation.framework */,
 				BE63A2CC17D8D75C0072F4E1 /* UIKit.framework */,
 				BE63A2CE17D8D75C0072F4E1 /* Foundation.framework */,
 				BE63A2D017D8D75C0072F4E1 /* CoreGraphics.framework */,
@@ -96,8 +350,12 @@
 			isa = PBXGroup;
 			children = (
 				BE63A2DB17D8D75C0072F4E1 /* checkmate_tenkiAppDelegate.h */,
+				436CC58717E019110083784C /* Set_ViewController.h */,
+				436CC58817E019110083784C /* Set_ViewController.m */,
 				BE63A2DC17D8D75C0072F4E1 /* checkmate_tenkiAppDelegate.m */,
 				BE63A2E417D8D75C0072F4E1 /* MainStoryboard.storyboard */,
+				BE9434BE17E1A5BF00D4BFD4 /* GPS_checkmate_tenkiViewController.h */,
+				BE9434BF17E1A5BF00D4BFD4 /* GPS_checkmate_tenkiViewController.m */,
 				BE63A2F817D975560072F4E1 /* area04_checkmate_tenkiViewController.h */,
 				BE63A2F917D975560072F4E1 /* area04_checkmate_tenkiViewController.m */,
 				BE63A2F517D95F640072F4E1 /* area03_checkmate_tenkiViewController.h */,
@@ -116,16 +374,154 @@
 		BE63A2D317D8D75C0072F4E1 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BE94369217E299DE00D4BFD4 /* Title02.png */,
+				BE94368C17E299D300D4BFD4 /* Default-568h@2x.png */,
+				BE94368D17E299D300D4BFD4 /* Default.png */,
+				BE94368E17E299D300D4BFD4 /* Default@2x.png */,
+				BE9435BE17E296D600D4BFD4 /* GPS-pic.png */,
+				BE9435BF17E296D700D4BFD4 /* icons 2 */,
+				BE9435CF17E296D700D4BFD4 /* nao-chan.png */,
+				BE9435D017E296D700D4BFD4 /* oto */,
+				BE9435D917E296D700D4BFD4 /* sentaku.png */,
+				BE9435DA17E296D700D4BFD4 /* Title02.png */,
+				BE9435DB17E296D700D4BFD4 /* todoufuken */,
+				BE94361417E296D700D4BFD4 /* waku */,
+				BE94359A17E1BF9600D4BFD4 /* myIcon.png */,
+				BE94359817E1BF1400D4BFD4 /* myIcon@2x.png */,
+				436CC54717DD94860083784C /* music */,
+				436CC52D17D9B8090083784C /* umbrella2 */,
 				BE63A2D417D8D75C0072F4E1 /* Checkmate_tenki-Info.plist */,
 				BE63A2D517D8D75C0072F4E1 /* InfoPlist.strings */,
 				BE63A2D817D8D75C0072F4E1 /* main.m */,
 				BE63A2DA17D8D75C0072F4E1 /* Checkmate_tenki-Prefix.pch */,
-				BE63A2DE17D8D75C0072F4E1 /* Default.png */,
-				BE63A2E017D8D75C0072F4E1 /* Default@2x.png */,
-				BE63A2E217D8D75C0072F4E1 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		BE9435BF17E296D700D4BFD4 /* icons 2 */ = {
+			isa = PBXGroup;
+			children = (
+				BE9435C017E296D700D4BFD4 /* Cap.png */,
+				BE9435C117E296D700D4BFD4 /* Car-B.png */,
+				BE9435C217E296D700D4BFD4 /* Car-G.png */,
+				BE9435C317E296D700D4BFD4 /* globe.png */,
+				BE9435C417E296D700D4BFD4 /* kasa.png */,
+				BE9435C517E296D700D4BFD4 /* Long-K.png */,
+				BE9435C617E296D700D4BFD4 /* Out-Gsoft.png */,
+				BE9435C717E296D700D4BFD4 /* Out-P.png */,
+				BE9435C817E296D700D4BFD4 /* Sh-B.png */,
+				BE9435C917E296D700D4BFD4 /* Sh-O.png */,
+				BE9435CA17E296D700D4BFD4 /* Short-B.png */,
+				BE9435CB17E296D700D4BFD4 /* T-Pu.png */,
+				BE9435CC17E296D700D4BFD4 /* T-Y.png */,
+				BE9435CD17E296D700D4BFD4 /* T^P-L^K.png */,
+				BE9435CE17E296D700D4BFD4 /* Tops-P.png */,
+			);
+			path = "icons 2";
+			sourceTree = SOURCE_ROOT;
+		};
+		BE9435D017E296D700D4BFD4 /* oto */ = {
+			isa = PBXGroup;
+			children = (
+				BE9435D117E296D700D4BFD4 /* cloud01.m4a */,
+				BE9435D217E296D700D4BFD4 /* cloud02.m4a */,
+				BE9435D317E296D700D4BFD4 /* omake01.m4a */,
+				BE9435D417E296D700D4BFD4 /* omake02.m4a */,
+				BE9435D517E296D700D4BFD4 /* rain01.m4a */,
+				BE9435D617E296D700D4BFD4 /* rein02.m4a */,
+				BE9435D717E296D700D4BFD4 /* sun01.m4a */,
+				BE9435D817E296D700D4BFD4 /* sun02.m4a */,
+			);
+			path = oto;
+			sourceTree = SOURCE_ROOT;
+		};
+		BE9435DB17E296D700D4BFD4 /* todoufuken */ = {
+			isa = PBXGroup;
+			children = (
+				BE9435DC17E296D700D4BFD4 /* b_90_hokkaido_800p.gif */,
+				BE9435DD17E296D700D4BFD4 /* b_91_tohoku_800p.gif */,
+				BE9435DE17E296D700D4BFD4 /* b_92_kanto_800p.gif */,
+				BE9435DF17E296D700D4BFD4 /* b_93_hokuriku_800p.gif */,
+				BE9435E017E296D700D4BFD4 /* b_95_kinki_800p.gif */,
+				BE9435E117E296D700D4BFD4 /* b_96_chugoku_500p.gif */,
+				BE9435E217E296D700D4BFD4 /* b_97_kyushu_500p.gif */,
+				BE9435E317E296D700D4BFD4 /* b_98_okinawa_500p.gif */,
+				BE9435E417E296D700D4BFD4 /* japan_800.gif */,
+				BE9435E517E296D700D4BFD4 /* map_aichi480.gif */,
+				BE9435E617E296D700D4BFD4 /* map_akita480.gif */,
+				BE9435E717E296D700D4BFD4 /* map_aomori480.gif */,
+				BE9435E817E296D700D4BFD4 /* map_chiba480.gif */,
+				BE9435E917E296D700D4BFD4 /* map_ehime480.gif */,
+				BE9435EA17E296D700D4BFD4 /* map_fukui480.gif */,
+				BE9435EB17E296D700D4BFD4 /* map_fukuoka480.gif */,
+				BE9435EC17E296D700D4BFD4 /* map_fukusima480.gif */,
+				BE9435ED17E296D700D4BFD4 /* map_gifu480.gif */,
+				BE9435EE17E296D700D4BFD4 /* map_gunma480.gif */,
+				BE9435EF17E296D700D4BFD4 /* map_hirosima480.gif */,
+				BE9435F017E296D700D4BFD4 /* map_hokaido480.gif */,
+				BE9435F117E296D700D4BFD4 /* map_hyogo480.gif */,
+				BE9435F217E296D700D4BFD4 /* map_ibaragi480.gif */,
+				BE9435F317E296D700D4BFD4 /* map_isikawa480.gif */,
+				BE9435F417E296D700D4BFD4 /* map_iwate480.gif */,
+				BE9435F517E296D700D4BFD4 /* map_kagawa480.gif */,
+				BE9435F617E296D700D4BFD4 /* map_kagosima480.gif */,
+				BE9435F717E296D700D4BFD4 /* map_kanagawa480.gif */,
+				BE9435F817E296D700D4BFD4 /* map_kouchi480.gif */,
+				BE9435F917E296D700D4BFD4 /* map_kumamoto480.gif */,
+				BE9435FA17E296D700D4BFD4 /* map_kyoto480.gif */,
+				BE9435FB17E296D700D4BFD4 /* map_mie480.gif */,
+				BE9435FC17E296D700D4BFD4 /* map_miyagi480.gif */,
+				BE9435FD17E296D700D4BFD4 /* map_miyazaki480.gif */,
+				BE9435FE17E296D700D4BFD4 /* map_nagano480.gif */,
+				BE9435FF17E296D700D4BFD4 /* map_nagasaki480.gif */,
+				BE94360017E296D700D4BFD4 /* map_nara480.gif */,
+				BE94360117E296D700D4BFD4 /* map_niigata480.gif */,
+				BE94360217E296D700D4BFD4 /* map_okayama480.gif */,
+				BE94360317E296D700D4BFD4 /* map_okinawa480.gif */,
+				BE94360417E296D700D4BFD4 /* map_ooita480.gif */,
+				BE94360517E296D700D4BFD4 /* map_osaka480.gif */,
+				BE94360617E296D700D4BFD4 /* map_saga480.gif */,
+				BE94360717E296D700D4BFD4 /* map_saitama480.gif */,
+				BE94360817E296D700D4BFD4 /* map_siga480.gif */,
+				BE94360917E296D700D4BFD4 /* map_simane480.gif */,
+				BE94360A17E296D700D4BFD4 /* map_sizuoka480.gif */,
+				BE94360B17E296D700D4BFD4 /* map_tochigi480.gif */,
+				BE94360C17E296D700D4BFD4 /* map_tokusima480.gif */,
+				BE94360D17E296D700D4BFD4 /* map_tokyo480.gif */,
+				BE94360E17E296D700D4BFD4 /* map_tottori480.gif */,
+				BE94360F17E296D700D4BFD4 /* map_toyama480.gif */,
+				BE94361017E296D700D4BFD4 /* map_wakayama480.gif */,
+				BE94361117E296D700D4BFD4 /* map_yamagata480.gif */,
+				BE94361217E296D700D4BFD4 /* map_yamaguchi480.gif */,
+				BE94361317E296D700D4BFD4 /* map_yamanasi480.gif */,
+			);
+			path = todoufuken;
+			sourceTree = SOURCE_ROOT;
+		};
+		BE94361417E296D700D4BFD4 /* waku */ = {
+			isa = PBXGroup;
+			children = (
+				BE94368A17E2999F00D4BFD4 /* Default@2x.png */,
+				BE94361517E296D700D4BFD4 /* cloud-rain.png */,
+				BE94361617E296D700D4BFD4 /* cloud-sun.png */,
+				BE94361717E296D700D4BFD4 /* cloud.png */,
+				BE94361817E296D700D4BFD4 /* rain-cloud.png */,
+				BE94361917E296D700D4BFD4 /* rain-sun.png */,
+				BE94361A17E296D700D4BFD4 /* rain.png */,
+				BE94361B17E296D700D4BFD4 /* rain^cloud.png */,
+				BE94361C17E296D700D4BFD4 /* rain^snow.png */,
+				BE94361D17E296D700D4BFD4 /* snow-rain.png */,
+				BE94361E17E296D700D4BFD4 /* snow-sun.png */,
+				BE94361F17E296D700D4BFD4 /* snow.png */,
+				BE94362017E296D700D4BFD4 /* sun-cloud.png */,
+				BE94362117E296D700D4BFD4 /* sun-rain.png */,
+				BE94362217E296D700D4BFD4 /* sun.png */,
+				BE94362317E296D700D4BFD4 /* sun^cloud.png */,
+				BE94362417E296D700D4BFD4 /* sun^rain.png */,
+				BE94362517E296D700D4BFD4 /* sun^snowpng.png */,
+			);
+			path = waku;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -180,10 +576,120 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE63A2D717D8D75C0072F4E1 /* InfoPlist.strings in Resources */,
-				BE63A2DF17D8D75C0072F4E1 /* Default.png in Resources */,
-				BE63A2E117D8D75C0072F4E1 /* Default@2x.png in Resources */,
-				BE63A2E317D8D75C0072F4E1 /* Default-568h@2x.png in Resources */,
 				BE63A2E617D8D75C0072F4E1 /* MainStoryboard.storyboard in Resources */,
+				436CC53017D9B80A0083784C /* readme.html in Resources */,
+				436CC53117D9B80A0083784C /* umbrella2.ai in Resources */,
+				436CC54917DD94860083784C /* test1.wav in Resources */,
+				BE94359917E1BF1400D4BFD4 /* myIcon@2x.png in Resources */,
+				BE94359B17E1BF9600D4BFD4 /* myIcon.png in Resources */,
+				BE9435AF17E1CBD100D4BFD4 /* Default-568h@2x.png in Resources */,
+				BE9435B117E1CBD700D4BFD4 /* Default@2x.png in Resources */,
+				BE9435B317E1CBDE00D4BFD4 /* Default.png in Resources */,
+				BE94362617E296D700D4BFD4 /* GPS-pic.png in Resources */,
+				BE94362717E296D700D4BFD4 /* Cap.png in Resources */,
+				BE94362817E296D700D4BFD4 /* Car-B.png in Resources */,
+				BE94362917E296D700D4BFD4 /* Car-G.png in Resources */,
+				BE94362A17E296D700D4BFD4 /* globe.png in Resources */,
+				BE94362B17E296D700D4BFD4 /* kasa.png in Resources */,
+				BE94362C17E296D700D4BFD4 /* Long-K.png in Resources */,
+				BE94362D17E296D700D4BFD4 /* Out-Gsoft.png in Resources */,
+				BE94362E17E296D700D4BFD4 /* Out-P.png in Resources */,
+				BE94362F17E296D700D4BFD4 /* Sh-B.png in Resources */,
+				BE94363017E296D700D4BFD4 /* Sh-O.png in Resources */,
+				BE94363117E296D700D4BFD4 /* Short-B.png in Resources */,
+				BE94363217E296D700D4BFD4 /* T-Pu.png in Resources */,
+				BE94363317E296D700D4BFD4 /* T-Y.png in Resources */,
+				BE94363417E296D700D4BFD4 /* T^P-L^K.png in Resources */,
+				BE94363517E296D700D4BFD4 /* Tops-P.png in Resources */,
+				BE94363617E296D700D4BFD4 /* nao-chan.png in Resources */,
+				BE94363717E296D700D4BFD4 /* cloud01.m4a in Resources */,
+				BE94363817E296D700D4BFD4 /* cloud02.m4a in Resources */,
+				BE94363917E296D700D4BFD4 /* omake01.m4a in Resources */,
+				BE94363A17E296D700D4BFD4 /* omake02.m4a in Resources */,
+				BE94363B17E296D700D4BFD4 /* rain01.m4a in Resources */,
+				BE94363C17E296D700D4BFD4 /* rein02.m4a in Resources */,
+				BE94363D17E296D700D4BFD4 /* sun01.m4a in Resources */,
+				BE94363E17E296D700D4BFD4 /* sun02.m4a in Resources */,
+				BE94363F17E296D700D4BFD4 /* sentaku.png in Resources */,
+				BE94364017E296D700D4BFD4 /* Title02.png in Resources */,
+				BE94364117E296D700D4BFD4 /* b_90_hokkaido_800p.gif in Resources */,
+				BE94364217E296D700D4BFD4 /* b_91_tohoku_800p.gif in Resources */,
+				BE94364317E296D700D4BFD4 /* b_92_kanto_800p.gif in Resources */,
+				BE94364417E296D700D4BFD4 /* b_93_hokuriku_800p.gif in Resources */,
+				BE94364517E296D700D4BFD4 /* b_95_kinki_800p.gif in Resources */,
+				BE94364617E296D700D4BFD4 /* b_96_chugoku_500p.gif in Resources */,
+				BE94364717E296D700D4BFD4 /* b_97_kyushu_500p.gif in Resources */,
+				BE94364817E296D700D4BFD4 /* b_98_okinawa_500p.gif in Resources */,
+				BE94364917E296D700D4BFD4 /* japan_800.gif in Resources */,
+				BE94364A17E296D700D4BFD4 /* map_aichi480.gif in Resources */,
+				BE94364B17E296D700D4BFD4 /* map_akita480.gif in Resources */,
+				BE94364C17E296D700D4BFD4 /* map_aomori480.gif in Resources */,
+				BE94364D17E296D700D4BFD4 /* map_chiba480.gif in Resources */,
+				BE94364E17E296D700D4BFD4 /* map_ehime480.gif in Resources */,
+				BE94364F17E296D700D4BFD4 /* map_fukui480.gif in Resources */,
+				BE94365017E296D700D4BFD4 /* map_fukuoka480.gif in Resources */,
+				BE94365117E296D700D4BFD4 /* map_fukusima480.gif in Resources */,
+				BE94365217E296D700D4BFD4 /* map_gifu480.gif in Resources */,
+				BE94365317E296D700D4BFD4 /* map_gunma480.gif in Resources */,
+				BE94365417E296D700D4BFD4 /* map_hirosima480.gif in Resources */,
+				BE94365517E296D700D4BFD4 /* map_hokaido480.gif in Resources */,
+				BE94365617E296D700D4BFD4 /* map_hyogo480.gif in Resources */,
+				BE94365717E296D700D4BFD4 /* map_ibaragi480.gif in Resources */,
+				BE94365817E296D700D4BFD4 /* map_isikawa480.gif in Resources */,
+				BE94365917E296D700D4BFD4 /* map_iwate480.gif in Resources */,
+				BE94365A17E296D700D4BFD4 /* map_kagawa480.gif in Resources */,
+				BE94365B17E296D700D4BFD4 /* map_kagosima480.gif in Resources */,
+				BE94365C17E296D700D4BFD4 /* map_kanagawa480.gif in Resources */,
+				BE94365D17E296D700D4BFD4 /* map_kouchi480.gif in Resources */,
+				BE94365E17E296D700D4BFD4 /* map_kumamoto480.gif in Resources */,
+				BE94365F17E296D700D4BFD4 /* map_kyoto480.gif in Resources */,
+				BE94366017E296D700D4BFD4 /* map_mie480.gif in Resources */,
+				BE94366117E296D700D4BFD4 /* map_miyagi480.gif in Resources */,
+				BE94366217E296D700D4BFD4 /* map_miyazaki480.gif in Resources */,
+				BE94366317E296D700D4BFD4 /* map_nagano480.gif in Resources */,
+				BE94366417E296D700D4BFD4 /* map_nagasaki480.gif in Resources */,
+				BE94366517E296D700D4BFD4 /* map_nara480.gif in Resources */,
+				BE94366617E296D700D4BFD4 /* map_niigata480.gif in Resources */,
+				BE94366717E296D700D4BFD4 /* map_okayama480.gif in Resources */,
+				BE94366817E296D700D4BFD4 /* map_okinawa480.gif in Resources */,
+				BE94366917E296D700D4BFD4 /* map_ooita480.gif in Resources */,
+				BE94366A17E296D700D4BFD4 /* map_osaka480.gif in Resources */,
+				BE94366B17E296D700D4BFD4 /* map_saga480.gif in Resources */,
+				BE94366C17E296D700D4BFD4 /* map_saitama480.gif in Resources */,
+				BE94366D17E296D700D4BFD4 /* map_siga480.gif in Resources */,
+				BE94366E17E296D700D4BFD4 /* map_simane480.gif in Resources */,
+				BE94366F17E296D700D4BFD4 /* map_sizuoka480.gif in Resources */,
+				BE94367017E296D700D4BFD4 /* map_tochigi480.gif in Resources */,
+				BE94367117E296D700D4BFD4 /* map_tokusima480.gif in Resources */,
+				BE94367217E296D700D4BFD4 /* map_tokyo480.gif in Resources */,
+				BE94367317E296D700D4BFD4 /* map_tottori480.gif in Resources */,
+				BE94367417E296D700D4BFD4 /* map_toyama480.gif in Resources */,
+				BE94367517E296D700D4BFD4 /* map_wakayama480.gif in Resources */,
+				BE94367617E296D700D4BFD4 /* map_yamagata480.gif in Resources */,
+				BE94367717E296D700D4BFD4 /* map_yamaguchi480.gif in Resources */,
+				BE94367817E296D700D4BFD4 /* map_yamanasi480.gif in Resources */,
+				BE94367917E296D700D4BFD4 /* cloud-rain.png in Resources */,
+				BE94367A17E296D700D4BFD4 /* cloud-sun.png in Resources */,
+				BE94367B17E296D700D4BFD4 /* cloud.png in Resources */,
+				BE94367C17E296D700D4BFD4 /* rain-cloud.png in Resources */,
+				BE94367D17E296D700D4BFD4 /* rain-sun.png in Resources */,
+				BE94367E17E296D700D4BFD4 /* rain.png in Resources */,
+				BE94367F17E296D700D4BFD4 /* rain^cloud.png in Resources */,
+				BE94368017E296D700D4BFD4 /* rain^snow.png in Resources */,
+				BE94368117E296D700D4BFD4 /* snow-rain.png in Resources */,
+				BE94368217E296D700D4BFD4 /* snow-sun.png in Resources */,
+				BE94368317E296D700D4BFD4 /* snow.png in Resources */,
+				BE94368417E296D700D4BFD4 /* sun-cloud.png in Resources */,
+				BE94368517E296D700D4BFD4 /* sun-rain.png in Resources */,
+				BE94368617E296D700D4BFD4 /* sun.png in Resources */,
+				BE94368717E296D700D4BFD4 /* sun^cloud.png in Resources */,
+				BE94368817E296D700D4BFD4 /* sun^rain.png in Resources */,
+				BE94368917E296D700D4BFD4 /* sun^snowpng.png in Resources */,
+				BE94368B17E2999F00D4BFD4 /* Default@2x.png in Resources */,
+				BE94368F17E299D300D4BFD4 /* Default-568h@2x.png in Resources */,
+				BE94369017E299D300D4BFD4 /* Default.png in Resources */,
+				BE94369117E299D300D4BFD4 /* Default@2x.png in Resources */,
+				BE94369317E299DE00D4BFD4 /* Title02.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +707,8 @@
 				BE63A2F417D8DAEC0072F4E1 /* area02_checkmate_tenkiViewController.m in Sources */,
 				BE63A2F717D95F640072F4E1 /* area03_checkmate_tenkiViewController.m in Sources */,
 				BE63A2FA17D975560072F4E1 /* area04_checkmate_tenkiViewController.m in Sources */,
+				436CC58917E019110083784C /* Set_ViewController.m in Sources */,
+				BE9434C017E1A5BF00D4BFD4 /* GPS_checkmate_tenkiViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,10 +793,14 @@
 		BE63A2ED17D8D75C0072F4E1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ippei Otsuka (JZW5DJYPD8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ippei Otsuka (JZW5DJYPD8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Checkmate_tenki/Checkmate_tenki-Prefix.pch";
 				INFOPLIST_FILE = "Checkmate_tenki/Checkmate_tenki-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "905C0579-179D-494E-85EF-4183E76BDFA9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "905C0579-179D-494E-85EF-4183E76BDFA9";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -296,10 +808,14 @@
 		BE63A2EE17D8D75C0072F4E1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ippei Otsuka (JZW5DJYPD8)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ippei Otsuka (JZW5DJYPD8)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Checkmate_tenki/Checkmate_tenki-Prefix.pch";
 				INFOPLIST_FILE = "Checkmate_tenki/Checkmate_tenki-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "905C0579-179D-494E-85EF-4183E76BDFA9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "905C0579-179D-494E-85EF-4183E76BDFA9";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
